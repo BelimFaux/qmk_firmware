@@ -36,6 +36,12 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
                 return false;
             }
             break;
+        case RA(KC_QUES):
+            if (record->tap.count && record->event.pressed) {
+                tap_code16(KC_QUES);
+                return false;
+            }
+            break;
     }
     return true;
 }
