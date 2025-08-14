@@ -57,7 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
          KC_A,     LA(KC_S),      LG(KC_D),     LC(KC_F),     KC_G,          KC_H,     RC(KC_J),      RG(KC_K),      RA(KC_L),    KC_BSPC,
     //├──────────┼─────────────┼─────────────┼─────────────┼──────────┤   ├──────────┼─────────────┼─────────────┼─────────────┼──────────┤
     //│  Y       │  X          │  C          │  V          │  B       │   │  N       │  M          │ , ;         │ . :         │ ENTER    │
-         KC_Y,      KC_X,         KC_C,         KC_V,        KC_B,          KC_N,      KC_M,         KC_COMM,      KC_DOT,       KC_ENT,
+         KC_Y,      KC_X,         KC_C,         KC_V,         KC_B,          KC_N,      KC_M,         KC_COMM,      KC_DOT,       KC_ENT,
     //╰──────────┴─────────────┴─────────────┼─────────────┼──────────┤   ├──────────┼─────────────┼─────────────┴─────────────┴──────────╯
     //                                       │  Layer 2    │  LShift  │   │  Space   │   Layer 1   │
                                                 TL_UPPR,     KC_LSFT,        KC_SPC,     TL_LOWR
@@ -98,14 +98,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_ADJUST] = LAYOUT_split_3x5_2(
     //╭──────────┬─────────────┬─────────────┬─────────────┬──────────╮   ╭──────────┬─────────────┬─────────────┬─────────────┬──────────╮
-    //│  F1      │  F2         │  F3         │  F4         │ LClick   │   │  RClick  │             │ BootMode    │ AudioMute   │ NextSong │
-        KC_F1,     KC_F2,        KC_F3,        KC_F4,        MS_BTN1,       MS_BTN2,    KC_TRNS,      QK_BOOT,      KC_MUTE,      KC_MNXT,
+    //│  F1      │  F2         │  F3         │  F4         │          │   │          │  Vol-       │  Vol+       │ AudioMute   │ NextSong │
+        KC_F1,     KC_F2,        KC_F3,        KC_F4,        KC_TRNS,       KC_TRNS,    KC_VOLD,      KC_VOLU,      KC_MUTE,     KC_MNXT,
     //├──────────┼─────────────┼─────────────┼─────────────┼──────────┤   ├──────────┼─────────────┼─────────────┼─────────────┼──────────┤
-    //│  F5      │ LAlt, F6    │  LGui, F7   │  LCtl, F4   │ MouseU   │   │  MouseD  │ RCtl        │ LGui,Brgt+  │ RAlt,Vol+   │Play/Pause│
-        KC_F5,     LA(KC_F6),    LG(KC_F7),    LC(KC_F8),    MS_UP,         MS_DOWN,   RC(KC_TRNS),  RG(KC_BRIU),  RA(KC_VOLU),  KC_MPLY,
+    //│  F5      │ LAlt, F6    │  LGui, F7   │  LCtl, F4   │          │   │  MouseL  │ RCtl,MouseD │ LGui,MouseU │ RAlt,MouseR │Play/Pause│
+        KC_F5,     LA(KC_F6),    LG(KC_F7),    LC(KC_F8),    KC_TRNS,       MS_LEFT,   RC(MS_DOWN),  RG(MS_UP),    RA(MS_RGHT),  KC_MPLY,
     //├──────────┼─────────────┼─────────────┼─────────────┼──────────┤   ├──────────┼─────────────┼─────────────┼─────────────┼──────────┤
-    //│  F9      │  F10        │  F11        │  F12        │ MouseL   │   │  MouseR  │             │  Brgt-      │  Vol-       │ PrevSong │
-        KC_F9,     KC_F10,       KC_F11,       KC_F12,       MS_LEFT,       MS_RGHT,   KC_TRNS,      KC_BRID,      KC_VOLD,     KC_MPRV,
+    //│  F9      │  F10        │  F11        │  F12        │ LClick   │   │  RClick  │  Brgt-      │  Brgt+      │             │ PrevSong │
+        KC_F9,     KC_F10,       KC_F11,       KC_F12,       MS_BTN1,        MS_BTN2,   KC_BRID,      KC_BRIU,      KC_TRNS,     KC_MPRV,
     //╰──────────┴─────────────┴─────────────┼─────────────┼──────────┤   ├──────────┼─────────────┼─────────────┴─────────────┴──────────╯
     //                                       │             │          │   │          │             │
                                                KC_TRNS,      KC_TRNS,       KC_TRNS,    KC_TRNS

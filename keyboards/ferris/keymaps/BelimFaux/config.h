@@ -34,5 +34,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // Pick good defaults for enabling homerow modifiers
 #define TAPPING_TERM 200
-#define PERMISSIVE_HOLD
 #define QUICK_TAP_TERM 120 // tapping fast and then holding will sent default key and not mod key
